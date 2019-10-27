@@ -1,0 +1,8 @@
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\bin\Debug\netcoreapp2.0\CinemaExplorer.Persisted.deps.json
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\bin\Debug\netcoreapp2.0\CinemaExplorer.Persisted.dll
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\obj\Debug\netcoreapp2.0\CinemaExplorer.Persisted.csprojAssemblyReference.cache
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\obj\Debug\netcoreapp2.0\CinemaExplorer.Persisted.AssemblyInfoInputs.cache
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\obj\Debug\netcoreapp2.0\CinemaExplorer.Persisted.AssemblyInfo.cs
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\bin\Debug\netcoreapp2.0\CinemaExplorer.Persisted.pdb
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\obj\Debug\netcoreapp2.0\CinemaExplorer.Persisted.dll
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Persisted\obj\Debug\netcoreapp2.0\CinemaExplorer.Persisted.pdb

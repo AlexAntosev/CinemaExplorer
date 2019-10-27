@@ -1,0 +1,11 @@
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\bin\Debug\netcoreapp2.0\CinemaExplorer.Business.deps.json
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\bin\Debug\netcoreapp2.0\CinemaExplorer.Business.dll
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\bin\Debug\netcoreapp2.0\CinemaExplorer.Business.pdb
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\bin\Debug\netcoreapp2.0\CinemaExplorer.Persisted.dll
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\bin\Debug\netcoreapp2.0\CinemaExplorer.Persisted.pdb
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.csprojAssemblyReference.cache
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.AssemblyInfoInputs.cache
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.AssemblyInfo.cs
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.csproj.CopyComplete
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.dll
+C:\Users\sasha\source\repos\CinemaExplorer\CinemaExplorer.Business\obj\Debug\netcoreapp2.0\CinemaExplorer.Business.pdb
