@@ -30,7 +30,7 @@ namespace CinemaExplorer.Business.Services
             return await _unitOfWork.FilmRepository.Find(expression);
         }
 
-        public async Task<IEnumerable<Film>> GetAllAsync()
+        public async Task<List<Film>> GetAllAsync()
         {
             return await _unitOfWork.FilmRepository.GetAsync();
         }

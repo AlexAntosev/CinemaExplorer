@@ -12,7 +12,7 @@ namespace CinemaExplorer.Business.Interfaces
         Task<TEntity> UpdateAsync(Guid id, TEntity film);
         Task<bool> RemoveAsync(Guid id);
         Task<TEntity> GetAsync(Guid id);
-        Task<IEnumerable<TEntity>> GetAllAsync();
+        Task<List<TEntity>> GetAllAsync();
         Task<List<TEntity>> Find(Expression<Func<TEntity, bool>> expression);
     }
 }

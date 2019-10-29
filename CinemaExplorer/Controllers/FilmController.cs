@@ -38,10 +38,10 @@ namespace CinemaExplorer.Controllers
         }
 
         /// <summary>
-        /// Get all tickets.
+        /// Get all films.
         /// </summary>
-        /// <returns>All tickets.</returns>
-        /// <response code="404">If tickets are not found.</response>
+        /// <returns>All films.</returns>
+        /// <response code="404">If films are not found.</response>
         [HttpGet]
         [ProducesResponseType(typeof(IActionResult), 200)]
         [ProducesResponseType(404)]
@@ -50,6 +50,24 @@ namespace CinemaExplorer.Controllers
             var films = await _filmService.GetAllAsync();
 
             return Ok((films));
+        }
+
+        /// <summary>
+        /// Get price list.
+        /// </summary>
+        /// <returns>Price list.</returns>
+        /// <response code="404">If price list is not found.</response>
+        [HttpGet]
+        [Route("price-list")]
+        [ProducesResponseType(typeof(IActionResult), 200)]
+        [ProducesResponseType(404)]
+        public async Task<IActionResult> GetPriceList()
+        {
+            var films = await _filmService.GetAllAsync();
+            var priceList = films
+                .ConvertAll(item => _mapper.Map<Film, PriceModel>(item));
+
+            return Ok(priceList);
         }
 
         /// <summary>
