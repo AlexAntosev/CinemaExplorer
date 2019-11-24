@@ -4,6 +4,7 @@ using CinemaExplorer.Models;
 using CinemaExplorer.Persisted.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace CinemaExplorer.Controllers
@@ -21,20 +22,20 @@ namespace CinemaExplorer.Controllers
         }
 
         /// <summary>
-        /// Get specific ticket.
+        /// Get specific film.
         /// </summary>
-        /// <param name="filmId">Ticket Id.</param>
-        /// <returns>Place by id.</returns>
-        /// <response code="404">If ticket is not found.</response>
+        /// <param name="filmId">Film Id.</param>
+        /// <returns>Film by id.</returns>
+        /// <response code="404">If film is not found.</response>
         [HttpGet]
         [Route("{filmId}")]
         [ProducesResponseType(typeof(IActionResult), 200)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> Get(Guid filmId)
         {
-            var ticket = await _filmService.GetAsync(filmId);
+            var film = await _filmService.GetAsync(filmId);
 
-            return Ok(ticket);
+            return Ok(film);
         }
 
         /// <summary>
@@ -47,6 +48,8 @@ namespace CinemaExplorer.Controllers
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetAll()
         {
+            //TODO: Mb create middleare or action filter to delay http response 
+            await Task.Delay(10000);
             var films = await _filmService.GetAllAsync();
 
             return Ok((films));
@@ -68,6 +71,25 @@ namespace CinemaExplorer.Controllers
                 .ConvertAll(item => _mapper.Map<Film, PriceModel>(item));
 
             return Ok(priceList);
+        }
+
+        /// <summary>
+        /// Get films by ids.
+        /// </summary>
+        /// <param name="filmId">Films ids.</param>
+        /// <returns>Films by ids.</returns>
+        /// <response code="404">If films is not found.</response>
+        [HttpGet]
+        [Route("film-ids")]
+        [ProducesResponseType(typeof(IActionResult), 200)]
+        [ProducesResponseType(404)]
+        public async Task<IActionResult> GetAllByIds([FromBody] List<Guid> filmIds)
+        {
+            //TODO: Mb create middleare or action filter to delay http response
+            await Task.Delay(10000);
+            var films = await _filmService.GetAllByIds(filmIds);            
+
+            return Ok(films);
         }
 
         /// <summary>
